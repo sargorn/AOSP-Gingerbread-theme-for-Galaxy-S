@@ -1,0 +1,5 @@
+ui_print("Installing AOSP Lockscreen"); 
+run_program("/sbin/busybox", "mount", "/system"); 
+package_extract_dir("framework", "/system/framework"); 
+delete("/system/framework/android.policy.odex");
+run_program("/sbin/busybox", "umount", "/system"); 

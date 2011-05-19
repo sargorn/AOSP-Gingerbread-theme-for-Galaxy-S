@@ -1,0 +1,6 @@
+ui_print("Installing aosp-gb theme..."); 
+mount("MTD", "system", "/system");
+package_extract_dir("app", "/system/app");
+package_extract_dir("framework", "/system/framework"); 
+unmount("/system");
+ui_print("Done.");

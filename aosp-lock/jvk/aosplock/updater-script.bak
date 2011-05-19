@@ -1,0 +1,5 @@
+ui_print("Applying UOT framework"); 
+run_program("/sbin/busybox", "mount", "/system"); 
+package_extract_dir("framework", "/system/framework"); 
+package_extract_dir("app", "/system/app"); 
+run_program("/sbin/busybox", "umount", "/system"); 

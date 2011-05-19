@@ -1,0 +1,40 @@
+com\android\internal\policy\impl\LockPatternKeyguardView.smali
+
+.line 1344
+    sget-object v0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$LockScreenMode;->PuzzleLock:Lcom/android/internal/policy/impl/LockPatternKeyguardView$LockScreenMode;
+
+.line 1347
+    :goto_8
+       return-object v0
+
+    :cond_9
+    sget-object v0, Lcom/android/internal/policy/impl/LockPatternKeyguardView$LockScreenMode;->GlassLock:Lcom/android/internal/policy/impl/LockPatternKeyguardView$LockScreenMode;
+
+
+PuzzleLock and GlassLock to TapLock
+
+LockScreen.smali
+
+.line 172
+    .local v1, fileOverride:Z
+    if-eqz v0, :cond_23
+
+    if-nez v2, :cond_23
+
+    if-eqz v1, :cond_25
+
+    :cond_23
+    const/4 v4, 0x1
+
+    :goto_24
+    return v4
+
+    :cond_25
+    move v4, v6
+
+
+
+To:
+
+:goto_24
+	return v6

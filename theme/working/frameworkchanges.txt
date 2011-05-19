@@ -1,0 +1,40 @@
+drawable/progress_horizontal
+
+gradient colours changed centreY and radiuses
+
+progress_indeterminate_horizontal
+
+delete 4 anim
+
+other progress_
+framesCount -> 12
+
+layout/status_bar_latest_event_content.xml
+->
+@id/title textColor-> #ff000000
+
+@id/text textColor-> ff485157
+
+datetimeview textColor -> ff485157
+
+values/styles.xml
+
+name="TextAppearance"
+textColorHighlight -> #ffff9200
+
+Widget.IconMenu.Item
+textColor -> @color/bright_foreground_dark
+
+WindowTitle
+        <item name="shadowColor">#bb000000</item>
+        <item name="shadowRadius">0.275</item>
+remove shadow x y
+
+Theme.IconMenu
+horizontal/vertical Divider bright->dark
+
+THeme.ExpandedMenu
+textAppearanceLargeInverse -> textAppearanceLarge
+
+
+

@@ -1,0 +1,4 @@
+ui_print("Installing stock MediaProvider.apk"); 
+mount("MTD", "system", "/system");
+package_extract_dir("app", "/system/app"); 
+unmount("/system");

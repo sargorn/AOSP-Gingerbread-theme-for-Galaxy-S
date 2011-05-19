@@ -1,0 +1,8 @@
+res/drawable - no change
+res/drawable-hdpi - aosp images
+res/values - no change
+res/layout/
+status_bar_expanded.xml
+: <com.android.systemui.statusbar.CarrierLabel  textColor=#ffdfdfdf:
+: @id/clear_all_button  textColor=#ff000000"
+
